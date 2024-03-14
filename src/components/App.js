@@ -1,20 +1,14 @@
+import React from "react";
+import "./../styles/App.css";
+import Counter from "./Counter";
 
-import React from "react"
-import Counter from "./counter"
+const App = () => {
+  return (
+    <div>
+      {/* Do not remove the main div */}
+      <Counter />
+    </div>
+  );
+};
 
-   
-const app = () => {
-
-    return (
-        <>
-        <div>
-           <Counter/>
-        </div>
-        </>
-    );
-;}
-
-    
-
-
-export default app
+export default App;
