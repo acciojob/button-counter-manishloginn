@@ -6,9 +6,11 @@ const App = () => {
 
     const [count, setCount] = useState(0);
 
-    function increment() {
+    const increment =() =>  {
         setCount((prev) => prev + 1)
     }
+
+   
 
 
     return (
@@ -16,7 +18,7 @@ const App = () => {
         <div>
            <p>Button clicked {count} times</p>
             <button onClick={increment}>Click me</button>
-            </div>
+        </div>
         </>
     )
 }
