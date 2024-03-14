@@ -1,14 +1,14 @@
-import React from "react";
-import "./../styles/App.css";
-import Counter from "./Counter";
+// import { useState } from "react";
+import Counter  from "./counter";
+
+
 
 const App = () => {
-  return (
-    <div>
-      {/* Do not remove the main div */}
-      <Counter />
-    </div>
-  );
-};
+    return (
+        <>
+         <Counter />
+        </>
+    )
+}
 
 export default App;

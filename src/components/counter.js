@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-function Counter() {
-  const [count, setCount] = useState(0);
+function Counter(params) {
+    
+    const [count, setState] = useState(0)
 
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
+    const increment = () => {
+        setState(count +1)
+    }
 
-  return (
-    <>
-      <p>Button clicked {count} times</p>
-      <button onClick={incrementCount}>Click me</button>
-    </>
-  );
+    return (
+
+        <>
+            <p>Button clicked {count} times</p>
+            <button onClick={increment}>Click me</button>
+        </>
+    )
 }
 
-export default Counter;
+export default Counter
