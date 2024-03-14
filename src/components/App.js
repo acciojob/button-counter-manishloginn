@@ -7,16 +7,14 @@ const App = () => {
     const [count, setCount] = useState(0);
 
     function increment() {
-        setCount((prev) => prev +1)
+        setCount((prev) => prev + 1)
     }
 
 
     return (
         <>
         <div>
-            {
-                <p>Button clicked {count} times</p>
-            }
+           <p>Button clicked {count} times</p>
             <button onClick={increment}>Click me</button>
             </div>
         </>
