@@ -1,26 +1,20 @@
 
-import { useState } from "react"
-
-
-const App = () => {
-
-    const [count, setCount] = useState(0);
-
-    const increment =() =>  {
-        setCount((prev) => prev + 1)
-    }
+import React from "react"
+import Counter from "./counter"
 
    
-
+const app = () => {
 
     return (
         <>
         <div>
-           <p>Button clicked {count} times</p>
-            <button onClick={increment}>Click me</button>
+           <Counter/>
         </div>
         </>
-    )
-}
+    );
+;}
 
-export default App
+    
+
+
+export default app
